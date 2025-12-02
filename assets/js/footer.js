@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="footer-bottom">
             <p>&copy; 2025 VanaVigyan Plant Research. All rights reserved.</p>
-        </div>
+        </div><br><br><br>
     `;
     
     document.body.appendChild(footer);
