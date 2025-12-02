@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/vanavigyan/index.html">Home</a></li>
                     <li><a href="#">Plant Database</a></li>
                     <li><a href="#">Research Papers</a></li>
                     <li><a href="#">About Us</a></li>
@@ -33,12 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <div class="footer-section">
                 <h4>Contact Info</h4>
-                <p>📧 research@VanaVigyan.org</p>
-                <p>📞 +1 (555) 123-4567</p>
-                <p>🏢 123 Research Park, Science City</p>
-              <br><hr>   <div class="footer-bottom">
+                <p>📧 aniketvc.work@gmail.com</p>
+                <p>📞 +91 9370936714</p>
+                <p>🏢Pimpri Chinchwad College Of Engineering ,Nigdi ,Pune</p>
+              <hr><div class="footer-bottom">
             <p>&copy; 2025 VanaVigyan Plant Research. All rights reserved.</p>
-        </div><hr><br>
+        </div><hr>
             </div>
         </div>
         
