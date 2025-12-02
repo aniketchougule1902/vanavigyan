@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VanaVigyan Plant Research Database</title>
+    <link rel="stylesheet" href="/vanavigyan/assets/css/styles.css">
+    <link rel="stylesheet" href="/vanavigyan/assets/css/plant-pages.css">
+    <style>
+        /* Additional styles for contact page */
+        .contact-section {
+            padding: 4rem 0;
+        }
+        
+        .contact-section h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .contact-intro {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: var(--text-light);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .contact-details {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+        
+        .contact-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .contact-label {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-value {
+            color: var(--text-dark);
+            font-size: 1.3rem;
+        }
+        
+        .contact-email {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .contact-email:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        
+        .contact-form-section {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(26, 42, 108, 0.1));
+            border-radius: var(--border-radius);
+        }
+        
+        .contact-form-section p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.1rem;
+            padding: 1.2rem 2.5rem;
+        }
+        
+        .contact-btn::after {
+            content: '→';
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-btn:hover::after {
+            transform: translateX(5px);
+        }
+        
+        .response-time {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin: 2rem auto;
+            max-width: 600px;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .thank-you {
+            text-align: center;
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-top: 3rem;
+            padding: 2rem;
+            border-top: 2px solid rgba(78, 205, 196, 0.2);
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .contact-section h2 {
+                font-size: 1.8rem;
+            }
+            
+            .contact-details {
+                padding: 2rem;
+            }
+            
+            .contact-value {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .contact-section h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .contact-details {
+                padding: 1.5rem;
+            }
+            
+            .contact-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="brand">&#127795; Vana<span class="brand-accent">Vigyan</span></a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Journals And Books
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-link">Plant Database</a>
+                                <a href="#" class="dropdown-link">Chemical Analysis</a>
+                                <a href="#" class="dropdown-link">Research Papers</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-link">Medicinal Plants</a>
+                            <a href="#" class="dropdown-link">Aromatic Plants</a>
+                            <a href="#" class="dropdown-link">Culinary Herbs</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="/vanavigyan/contact-us.html" class="nav-link active">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">More &#11167;
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-link">Disclaimer</a>
+                                <a href="#" class="dropdown-link">Privacy Policy</a>
+                                <a href="#" class="dropdown-link">Terms And Conditions</a>
+                                <a href="#" class="dropdown-link">Documentation</a>
+                                <a href="#" class="dropdown-link">Copyrights</a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Desktop Search Bar -->
+            <div class="search-container desktop-search">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" placeholder="Search plants, compounds...">
+                    <button class="search-button" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="search-results"></div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <button class="close-btn" aria-label="Close mobile menu">×</button>
+
+        <!-- Mobile Search Bar -->
+        <div class="search-container mobile-search">
+            <div class="search-wrapper">
+                <input type="text" class="search-input" placeholder="Search plants, compounds...">
+                <button class="search-button" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <div class="search-results"></div>
+            </div>
+        </div>
+
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Categories</a>
+                <ul class="mobile-dropdown-content">
+                    <li><a href="#" class="mobile-dropdown-link">Plant Database</a></li>
+                    <li><a href="#" class="mobile-dropdown-link">Chemical Analysis</a></li>
+                    <li><a href="#" class="mobile-dropdown-link">Research Papers</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="mobile-nav-link">Journals And Books</a></li>
+            <li><a href="#" class="mobile-nav-link">About Us</a></li>
+            <li><a href="contact-us.html" class="mobile-nav-link active">Contact Us</a></li>
+            <li><a href="#" class="mobile-nav-link">Disclaimer</a></li>
+            <li><a href="#" class="mobile-nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="mobile-nav-link">Terms And Conditions</a></li>
+            <li><a href="#" class="mobile-nav-link">Documentation</a></li>
+            <li><a href="#" class="mobile-nav-link">Copyrights</a></li>
+        </ul>
+    </div>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-container">
+            <span class="ticker-label">Contact Us:</span>
+            <div class="ticker-content">
+                <div class="ticker-item">Have questions? Reach out to our research team</div>
+                <div class="ticker-item">Share your plant research findings with us</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-area">
+        <!-- Default Contact Content -->
+        <div class="default-content" id="defaultContent">
+            <main class="main-content">
+                <div class="content-container">
+                    <!-- Contact Section -->
+                    <section class="contact-section">
+                        <h1>📞 Contact Us</h1>
+                        <h2>Get in Touch with VanaVigyan</h2>
+                        
+                        <p class="contact-intro">
+                            We always welcome feedback, suggestions and questions from our community. 
+                            Whether you would like to propose a new plant entry, point out an error, 
+                            share recent research, or simply say hello — we're here for it.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">
+                                    <a href="mailto:aniketvc.work@gmail.com" class="contact-email">
+                                        aniketvc.work@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+91-9370936714</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form-section">
+                            <p>
+                                If you prefer, you can also send us a message using our contact form:
+                            </p>
+                            
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSch_Cu0fKnev1ltIbzUNnF9UD-mvVhAxeNgZ0EWNnfxxVIxEg/viewform?usp=publish-editor" 
+                               class="btn btn-primary contact-btn" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                               Use the Contact Form
+                            </a>
+                        </div>
+                        
+                        <div class="response-time">
+                            We aim to respond to every inquiry within 1–3 business days.
+                        </div>
+                        
+                        <div class="thank-you">
+                            Thank you for your interest in VanaVigyan — your feedback helps us grow and improve.
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <script src="/vanavigyan/assets/js/footer.js"></script>
+    </footer>
+
+    
+    <script src="/vanavigyan/assets/js/script.js"></script>
+    <script src="/vanavigyan/assets/js/Cookies.js"></script>
+    <script src="/vanavigyan/assets/js/totop.js"></script>
+    <script src="/vanavigyan/assets/js/share.js"></script>
+    
+    <script>
+        // Simple active link highlighting for contact page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set active state for contact link in desktop nav
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === 'contact-us.html') {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Set active state for contact link in mobile nav
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileNavLinks.forEach(link => {
+                if (link.getAttribute('href') === 'contact-us.html') {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Handle Google Forms link tracking (optional)
+            const contactFormBtn = document.querySelector('.contact-btn');
+            if (contactFormBtn) {
+                contactFormBtn.addEventListener('click', function() {
+                    console.log('Contact form opened - tracking event');
+                    // Add analytics tracking here if needed
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
