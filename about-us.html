@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - VanaVigyan Plant Research Database</title>
+    <link rel="stylesheet" href="/vanavigyan/assets/css/styles.css">
+    <link rel="stylesheet" href="/vanavigyan/assets/css/plant-pages.css">
+    <style>
+        /* Additional styles for about page */
+        .about-section {
+            padding: 4rem 0;
+        }
+        
+        .about-section h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .about-section h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .about-intro {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            padding: 2rem;
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .mission-card {
+            background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(26, 42, 108, 0.1));
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border-left: 5px solid var(--primary);
+        }
+        
+        .mission-card h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .mission-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .mission-list li {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .mission-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .value-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        
+        .value-card h4 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .value-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .vision-section {
+            background: linear-gradient(135deg, rgba(26, 42, 108, 0.05), rgba(78, 205, 196, 0.05));
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+        }
+        
+        .vision-section h3 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .vision-list {
+            columns: 2;
+            column-gap: 3rem;
+        }
+        
+        .vision-list li {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            break-inside: avoid;
+        }
+        
+        .team-section {
+            margin: 4rem 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .member-avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .team-member h4 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-member p {
+            color: var(--text-light);
+            font-style: italic;
+        }
+        
+        .institution-info {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            margin: 3rem auto;
+            max-width: 800px;
+            border-top: 4px solid var(--secondary);
+        }
+        
+        .institution-info h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-section h2 {
+                font-size: 1.8rem;
+            }
+            
+            .vision-list {
+                columns: 1;
+            }
+            
+            .mission-card,
+            .vision-section {
+                padding: 2rem;
+            }
+            
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .about-section h1 {
+                font-size: 2rem;
+            }
+            
+            .about-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .value-card,
+            .team-member {
+                padding: 1.5rem;
+            }
+            
+            .institution-info {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/vanavigyan/index.html" class="brand">&#127795; Vana<span class="brand-accent">Vigyan</span></a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/vanavigyan/index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Journals And Books
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-link">Plant Database</a>
+                                <a href="#" class="dropdown-link">Chemical Analysis</a>
+                                <a href="#" class="dropdown-link">Research Papers</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-link">Medicinal Plants</a>
+                            <a href="#" class="dropdown-link">Aromatic Plants</a>
+                            <a href="#" class="dropdown-link">Culinary Herbs</a>
+                        </div>
+                    </li>
+                    <li><a href="/vanavigyan/about-us.html" class="nav-link active">About Us</a></li>
+                    <li><a href="/vanavigyan/contact-us.html" class="nav-link">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">More &#11167;
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-link">Disclaimer</a>
+                                <a href="#" class="dropdown-link">Privacy Policy</a>
+                                <a href="#" class="dropdown-link">Terms And Conditions</a>
+                                <a href="#" class="dropdown-link">Documentation</a>
+                                <a href="#" class="dropdown-link">Copyrights</a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Desktop Search Bar -->
+            <div class="search-container desktop-search">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" placeholder="Search plants, compounds...">
+                    <button class="search-button" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="search-results"></div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <button class="close-btn" aria-label="Close mobile menu">×</button>
+
+        <!-- Mobile Search Bar -->
+        <div class="search-container mobile-search">
+            <div class="search-wrapper">
+                <input type="text" class="search-input" placeholder="Search plants, compounds...">
+                <button class="search-button" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <div class="search-results"></div>
+            </div>
+        </div>
+
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Categories</a>
+                <ul class="mobile-dropdown-content">
+                    <li><a href="#" class="mobile-dropdown-link">Plant Database</a></li>
+                    <li><a href="#" class="mobile-dropdown-link">Chemical Analysis</a></li>
+                    <li><a href="#" class="mobile-dropdown-link">Research Papers</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="mobile-nav-link">Journals And Books</a></li>
+            <li><a href="/vanavigyan/about-us.html" class="mobile-nav-link active">About Us</a></li>
+            <li><a href="/vanavigyan/contact-us.html" class="mobile-nav-link">Contact Us</a></li>
+            <li><a href="#" class="mobile-nav-link">Disclaimer</a></li>
+            <li><a href="#" class="mobile-nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="mobile-nav-link">Terms And Conditions</a></li>
+            <li><a href="#" class="mobile-nav-link">Documentation</a></li>
+            <li><a href="#" class="mobile-nav-link">Copyrights</a></li>
+        </ul>
+    </div>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-container">
+            <span class="ticker-label">About Us:</span>
+            <div class="ticker-content">
+                <div class="ticker-item">Student-driven initiative documenting India's medicinal plant heritage</div>
+                <div class="ticker-item">Bridging rural herbal wisdom with modern scientific research</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-area">
+        <!-- Default About Content -->
+        <div class="default-content" id="defaultContent">
+            <main class="main-content">
+                <div class="content-container">
+                    <!-- About Section -->
+                    <section class="about-section">
+                        <h1>🌿 About VanaVigyan</h1>
+                        <h2>Our Mission & Vision</h2>
+                        
+                        <div class="about-intro">
+                            <p>VanaVigyan is a student-driven initiative dedicated to documenting India's vast heritage of medicinal plants and making this knowledge easily accessible to everyone. Our mission is to create a reliable, research-backed, and user-friendly platform where the healing properties of Indian herbs and small plants are presented in a simple, scientific, and structured manner.</p>
+                            <p>Many powerful medicinal plants are commonly found in rural areas, yet their benefits remain under-documented or under-utilized in cities. Through VanaVigyan, we aim to bridge this gap by bringing rural herbal wisdom to modern users — students, researchers, teachers, households, and anyone interested in natural remedies.</p>
+                        </div>
+                        
+                        <div class="mission-card">
+                            <h3>🌱 Our Purpose</h3>
+                            <ul class="mission-list">
+                                <li>To build a comprehensive Indian platform for medicinal, aromatic, and herbal plant information.</li>
+                                <li>To help communities understand the therapeutic value of everyday plants.</li>
+                                <li>To promote scientific awareness, responsible usage, and evidence-based knowledge.</li>
+                                <li>To preserve traditional rural medicinal wisdom and present it to urban users in a modern, searchable format.</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>🔍 Our Core Values</h2>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <span class="value-icon">🔬</span>
+                                <h4>Accuracy</h4>
+                                <p>Every plant entry is cross-checked, researched, and curated with care.</p>
+                            </div>
+                            
+                            <div class="value-card">
+                                <span class="value-icon">📖</span>
+                                <h4>Transparency</h4>
+                                <p>Sources, references, and data origins are clearly mentioned.</p>
+                            </div>
+                            
+                            <div class="value-card">
+                                <span class="value-icon">🌍</span>
+                                <h4>Free Knowledge</h4>
+                                <p>The platform is open for everyone — no paywalls, no restrictions.</p>
+                            </div>
+                            
+                            <div class="value-card">
+                                <span class="value-icon">📱</span>
+                                <h4>Accessibility</h4>
+                                <p>Simple design, readable language, and mobile-friendly structure ensure universal access.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="vision-section">
+                            <h3>🚀 Future Vision</h3>
+                            <p>We are continuously improving VanaVigyan and plan to expand it with:</p>
+                            <ul class="vision-list">
+                                <li>A larger database of medicinal plants</li>
+                                <li>User-submitted plant knowledge and research</li>
+                                <li>Collaborative projects with students and educators</li>
+                                <li>Detailed research summaries and verified scientific references</li>
+                                <li>High-quality images and illustrations</li>
+                                <li>Multi-language support for regional audiences</li>
+                            </ul>
+                            <p style="margin-top: 2rem; text-align: center; font-weight: 600; color: var(--primary);">
+                                Our long-term goal is to make VanaVigyan India's most trusted free library of herbal and medicinal plant information.
+                            </p>
+                        </div>
+                        
+                        <div class="team-section">
+                            <h2>👥 Our Team</h2>
+                            
+                            <div class="institution-info">
+                                <h3>Academic Background</h3>
+                                <p>VanaVigyan is created by a passionate group of first-year B.Tech IT students from<br>
+                                <strong>PCET's Pimpri Chinchwad College of Engineering (PCCoE), Nigdi, Pune</strong><br>
+                                under the guidance of <strong>Dr. Priya Joshi Ma'am</strong>.</p>
+                            </div>
+                            
+                            <h3 style="text-align: center; color: var(--secondary); margin-top: 3rem;">Team Members</h3>
+                            
+                            <div class="team-grid">
+                                <div class="team-member">
+                                    <div class="member-avatar">P</div>
+                                    <h4>Prachi Patil</h4>
+                                    <p>Research & Content</p>
+                                </div>
+                                
+                                <div class="team-member">
+                                    <div class="member-avatar">G</div>
+                                    <h4>Gauri Chavan</h4>
+                                    <p>Data Collection</p>
+                                </div>
+                                
+                                <div class="team-member">
+                                    <div class="member-avatar">A</div>
+                                    <h4>Aniket Chougule</h4>
+                                    <p>Development & Design</p>
+                                </div>
+                                
+                                <div class="team-member">
+                                    <div class="member-avatar">Y</div>
+                                    <h4>Yash Shinde</h4>
+                                    <p>Research & Documentation</p>
+                                </div>
+                            </div>
+                            
+                            <p style="text-align: center; font-size: 1.2rem; margin-top: 3rem; color: var(--text-dark); max-width: 800px; margin-left: auto; margin-right: auto;">
+                                Together, we combine our curiosity, research efforts, and technical skills to build a meaningful platform that contributes to society and promotes India's traditional plant knowledge.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+   
+    <script src="/vanavigyan/assets/js/footer.js"></script>
+
+   
+    <script src="/vanavigyan/assets/js/script.js"></script>
+    <script src="/vanavigyan/assets/js/Cookies.js"></script>
+    <script src="/vanavigyan/assets/js/totop.js"></script>
+    <script src="/vanavigyan/assets/js/share.js"></script>
+    
+    <script>
+        // Simple active link highlighting for about page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set active state for about link in desktop nav
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === 'about-us.html') {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Set active state for about link in mobile nav
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileNavLinks.forEach(link => {
+                if (link.getAttribute('href') === 'about-us.html') {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
