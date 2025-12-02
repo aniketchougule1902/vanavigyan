@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>📧 research@VanaVigyan.org</p>
                 <p>📞 +1 (555) 123-4567</p>
                 <p>🏢 123 Research Park, Science City</p>
+              <br><hr>   <div class="footer-bottom">
+            <p>&copy; 2025 VanaVigyan Plant Research. All rights reserved.</p>
+        </div><hr><br>
             </div>
         </div>
         
-        <div class="footer-bottom">
-            <p>&copy; 2025 VanaVigyan Plant Research. All rights reserved.</p>
-        </div><br><br><br>
+       
     `;
     
     document.body.appendChild(footer);
