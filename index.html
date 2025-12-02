@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanaVigyan - Plant Research Database</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="brand">&#127795; Vana<span class="brand-accent">Vigyan</span></a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Journals And Books
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-link">Plant Database</a>
+                                <a href="#" class="dropdown-link">Chemical Analysis</a>
+                                <a href="#" class="dropdown-link">Research Papers</a>
+                            </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-link">Medicinal Plants</a>
+                            <a href="#" class="dropdown-link">Aromatic Plants</a>
+                            <a href="#" class="dropdown-link">Culinary Herbs</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="#" class="nav-link">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">More &#11167;
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-link">Disclaimer</a>
+                                <a href="#" class="dropdown-link">Privacy Policy</a>
+                                <a href="#" class="dropdown-link">Terms And Conditions</a>
+                                <a href="#" class="dropdown-link">Documentation</a>
+                                <a href="#" class="dropdown-link">Copyrights</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Desktop Search Bar -->
+            <div class="search-container desktop-search">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" placeholder="Search plants, compounds...">
+                    <button class="search-button" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="search-results"></div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <button class="close-btn" aria-label="Close mobile menu">×</button>
+
+        <!-- Mobile Search Bar -->
+        <div class="search-container mobile-search">
+            <div class="search-wrapper">
+                <input type="text" class="search-input" placeholder="Search plants, compounds...">
+                <button class="search-button" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <div class="search-results"></div>
+            </div>
+        </div>
+
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Categories</a>
+                <ul class="mobile-dropdown-content">
+                    <li><a href="#" class="mobile-dropdown-link">Plant Database</a></li>
+                    <li><a href="#" class="mobile-dropdown-link">Chemical Analysis</a></li>
+                    <li><a href="#" class="mobile-dropdown-link">Research Papers</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="mobile-nav-link">Journals And Books</a></li>
+            <li><a href="#" class="mobile-nav-link">About Us</a></li>
+            <li><a href="#" class="mobile-nav-link">Contact Us</a></li>
+            <li><a href="#" class="mobile-nav-link">Disclaimer</a></li>
+            <li><a href="#" class="mobile-nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="mobile-nav-link">Terms And Conditions </a></li>
+            <li><a href="#" class="mobile-nav-link">Documentation</a></li>
+            <li><a href="#" class="mobile-nav-link">Copyrights </a></li>
+            <li><a href="#" class="mobile-nav-link"> </a></li>
+
+        </ul>
+    </div>
+
+    <!--  Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-container">
+            <span class="ticker-label">Latest Facts:</span>
+            <div class="ticker-content">
+                <div class="ticker-item">anti-inflammatory properties in Rosemary compounds</div>
+                <div class="ticker-item">Clinical trial shows Lavender effective for anxiety reduction</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-area">
+        <!-- Default Home Content -->
+        <div class="default-content" id="defaultContent">
+            <main class="main-content">
+                <div class="content-container">
+                    <!-- Hero Section -->
+                    <section class="hero-section">
+                        <div class="hero-content">
+                            <h1>Discover the Science Behind Medicinal Plants</h1>
+                            <p>Explore our comprehensive database of plant research, chemical compounds, and therapeutic
+                                applications backed by scientific evidence.</p>
+                            <div class="hero-actions">
+                                <button class="btn btn-primary" onclick="scrollToFeatured()">Explore Plants</button>
+                                <button class="btn btn-secondary" onclick="performSearch('medicinal')">Medicinal
+                                    Research</button>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="floating-plants">
+                                <div class="plant-icon">🌿</div>
+                                <div class="plant-icon">🧪</div>
+                                <div class="plant-icon">🔬</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Featured Plants Section -->
+                    <section class="featured-section" id="featuredPlants">
+                        <h2>Featured Plant Research</h2>
+                        <p class="section-subtitle">Latest scientific discoveries and research papers</p>
+
+                        <div class="featured-plants-grid" id="featuredPlantsGrid">
+                            <!-- Dynamic content with images will be loaded here -->
+                        </div>
+                    </section>
+
+                    <!-- Categories Section -->
+                    <section class="categories-section">
+                        <h2>Research Categories</h2>
+                        <div class="categories-grid">
+                            <div class="category-card" data-category="medicinal">
+                                <div class="category-icon">💊</div>
+                                <h3>Medicinal Plants</h3>
+                                <p>Plants with therapeutic properties and clinical applications</p>
+                                <span class="category-count">24 Studies</span>
+                            </div>
+                            <div class="category-card" data-category="aromatic">
+                                <div class="category-icon">🌸</div>
+                                <h3>Aromatic Plants</h3>
+                                <p>Essential oils and aromatic compounds research</p>
+                                <span class="category-count">18 Studies</span>
+                            </div>
+                            <div class="category-card" data-category="culinary">
+                                <div class="category-icon">🌿</div>
+                                <h3>Culinary Herbs</h3>
+                                <p>Nutritional and medicinal value of cooking herbs</p>
+                                <span class="category-count">15 Studies</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Latest Research Section -->
+                    <section class="research-section">
+                        <h2>Latest Research Papers</h2>
+                        <div class="research-grid" id="researchGrid">
+                            <!-- Dynamic content will be loaded here -->
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Search Results Page -->
+        <div class="search-results-page" id="searchResultsPage">
+            <main class="main-content">
+                <div class="content-container">
+                    <div class="search-results-header">
+                        <button class="btn btn-secondary back-to-home" onclick="hideSearchResults()">
+                            ← Back to Home
+                        </button>
+                        <h1>Plant Search Results</h1>
+                        <div class="results-info">
+                            <p>Search results for: <span class="search-query" id="searchQueryDisplay">"Your search
+                                    term"</span></p>
+                            <p class="results-count">Found <span class="count" id="resultsCount">0</span> plants</p>
+                        </div>
+                    </div>
+                    <div class="plants-grid" id="plantsGrid">
+                        <!-- Search results with images will be displayed here -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <script src="/assets/js/footer.js"></script>
+    </footer>
+
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/Cookies.js"></script>
+    <script src="/assets/js/totop.js"></script>
+    <script src="/assets/js/share.js"></script>
+
+</body>
+
+</html>
