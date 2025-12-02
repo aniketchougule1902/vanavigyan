@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const footer = document.createElement('footer');
     footer.className = 'footer';
     
-    footer.innerHTML = ` <script src="/vanavigyan/assets/js/share.js"></script>
+    footer.innerHTML = ` 
         <div class="footer-container">
             <div class="footer-section">
                 <h3>VanaVigyan Research</h3>
