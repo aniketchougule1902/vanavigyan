@@ -1,0 +1,406 @@
+{
+  "plants": [  
+    
+    {
+  "id": 1,
+  "title": "Neem",
+  "scientificName": "Azadirachta indica A.Juss",
+  "description": "Neem tree is India's oldest and most effective medicinal tree. It is called \"village pharmacy\" because everything on it - leaves, bark, seeds, oil - works as medicine. Neem purifies the blood, controls sugar levels, cures all skin diseases (pimples, rashes, itching, eczema), strengthens teeth and heals the mouth. It is anti-bacterial, anti-viral, anti-fungal, hence fights infections. It is also beneficial in fevers like malaria and dengue. It also keeps the liver and kidneys clean. It has been used since ancient times to purify blood, kill stomach worms and remove heat.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Skin diseases (acne, eczema, psoriasis)",
+    "Diabetes control",
+    "Dental problems (toothache, bleeding gums, mouth ulcers)",
+    "Blood purification",
+    "Malaria & dengue fever",
+    "Worm infestation in children",
+    "Dandruff & hair fall",
+    "Wound healing",
+    "Contraceptive (seed oil – traditional)",
+    "Pesticide (natural insect repellent)"
+  ],
+  "chemicalCompounds": [
+    "Azadirachtin",
+    "Nimbin",
+    "Nimbidin",
+    "Gedunin",
+    "Quercetin",
+    "Salannin",
+    "Beta-sitosterol",
+    "Kaempferol",
+    "Gallic acid",
+    "Catechin",
+    "Margolone",
+    "Cyclic trisulphide",
+    "Polysaccharides"
+  ],
+  "medicinalProperties": [
+    "Antibacterial",
+    "Antiviral",
+    "Antifungal",
+    "Antiseptic",
+    "Anti-inflammatory",
+    "Blood purifier",
+    "Immuno-modulator",
+    "Antidiabetic",
+    "Antimalarial",
+    "Antiparasitic",
+    "Wound healing",
+    "Antioxidant",
+    "Analgesic",
+    "Antipyretic"
+  ],
+  "growingConditions": "Full sunlight (6–8 hours daily), Well-drained sandy/loamy soil, pH 6.2–7.5, Tolerates drought & poor soil, Grows fast in hot climate, Can be grown in big pots or ground, Space 15–20 feet apart if in ground",
+  "harvestingTips": "Leaves: Pick young tender leaves anytime, best before flowering (Feb–May) Seeds: Collect ripe yellow fruits from tree in May–June, dry in shade Bark: Harvest only from mature trees (>5 years), peel gently in summer Never strip whole tree – take only 20–30%",
+  "image": "/assets/images/plants/neem1.jpg",
+  "thumbnail": "/assets/images/plants/neem1.jpg",
+  "path": "plants_data/neem.html",
+  "publishedDate": "1999-11-23",
+  "author": "H. S. Puri",
+  "readTime": "6 Min"
+},
+
+{
+  "id": 6,
+  "title": "Hibiscus ",
+  "scientificName": "Hibiscus sabdariffa",
+  "description": "Hibiscus sabdariffa, commonly known as Roselle, is an erect, mostly branched annual shrub that can grow up to 3.5 meters tall. Its stem has a reddish hue, and it possesses a deep-reaching taproot that helps in drought tolerance. The plant features large, deeply lobed leaves, which are typically green but can also exhibit reddish tinges, adding to its vivid tropical appeal. The leaves are alternately arranged, broad, and glossy.The flowers of Hibiscus sabdariffa are large, with a diameter of about 3 to 6 inches, and can be red, yellow, or white, often having a dark center containing short peduncles. The petals are bell-shaped, with some varieties bearing single or double rows of petals, and the blooms are short-lived, lasting only a day.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "1)Lowering high blood pressure",
+    "2)Managing cholesterol levels",
+    "3)Treating inflammation and infections",
+    "4(Improving liver health",
+    "5)Supporting weight management",
+    "6)Enhancing digestion",
+    "7)Boosting immune system"
+  ],
+  "chemicalCompounds": [
+    "Anthocyanins",
+    "Hibiscus acid",
+    "Flavonoids",
+    "Phenolic acids",
+    "Vitamin C",
+    "Organic acids"
+  ],
+  "medicinalProperties": [
+    "Antioxidant",
+    "Anti-inflammatory",
+    "Antihypertensive",
+    "Antimicrobial",
+    "Antidiabetic",
+    "Diuretic",
+    "Hepatoprotective"
+  ],
+  "growingConditions": "Warm tropical or subtropical climate, well-drained loamy soil, full sun exposure, regular watering, moderate humidity, space for bushy growth.",
+  "harvestingTips": "Harvest the calyces (flower sepals) when they turn deep red and before they fully dry on the plant to retain maximum medicinal potency.",
+  "image": "/assets/images/plants/hibiscus1.jpg",
+  "thumbnail": "assets/images/plants/hibiscus1.jpg",
+  "path": "plants_data/hibiscus.html",
+  "publishedDate": "2022-09-01",
+  "author": "E. Montalvo-Gonz\u00e1lez",
+  "readTime": "4 minutes "
+},
+
+{
+  "id": 5,
+  "title": "Ginger",
+  "scientificName": " Zingiber officinale",
+  "description": "Ginger (Zingiber officinale) is a herbaceous perennial plant widely cultivated for its thick, aromatic, and branched underground rhizome used as a spice and medicine. The rhizome has a brown outer layer and pale yellow interior with a spicy, citrusy aroma. The plant grows pseudostems about 3 to 4 feet tall made from tightly wrapped leaf bases bearing narrow, lanceolate medium-green leaves arranged in two ranks. The flowers appear on a separate stalk and form dense, cone-shaped spikes with pale yellow petals and purplish edges. The rhizomes are juicy and fleshy when young, becoming more fibrous and pungent with maturity. Ginger thrives in humid, tropical, and subtropical climates, prefers well-drained fertile soil, and requires moderate water and partial shade to full sun. It is widely used in cooking.This herbal perennial is also known for its beautiful flowering spikes, making it a popular ornamental plant in subtropical gardens. Link: https://www.tandfonline.com/doi/full/10.1080/09064710.2019.1606930",
+  "category": "Aromatic Plants",
+  "uses": [
+    "1)Fresh or dried rhizome used as spice or decoction",
+    "2)Ginger tea for relief from cold and cough",
+    "3(Powder used in digestive formulations",
+    "4)Oil and extracts used in massage for joint pain",
+    "5Ginger juice for nausea and indigestion"
+  ],
+  "chemicalCompounds": [
+    "Gingerols",
+    "shogaols",
+    "paradols",
+    "zingiberene",
+    "beta-bisabolene",
+    "zingerone",
+    "volatile oils"
+  ],
+  "medicinalProperties": [
+    "Anti-inflammatory",
+    "antioxidant",
+    "analgesic",
+    "antispasmodic",
+    "antiemetic",
+    "antimicrobial",
+    "antipyretic",
+    "digestive stimulant",
+    "immunomodulatory"
+  ],
+  "growingConditions": "Prefers well-drained, fertile loamy soil, Partial shade to full sun exposure,Needs humid tropical or subtropical climate,Requires loose, rich soil with organic matter",
+  "harvestingTips": "Harvest rhizomes 8-10 months after planting when leaves turn yellow and dry; gentle digging recommended to avoid damage",
+  "image": "assets/images/plants/ginger3.jpg",
+  "thumbnail": "assets/images/plants/ginger3.jpg",
+  "path": "plants_data/ginger.html",
+  "publishedDate": "2024-05-13",
+  "author": "Keshab Raj Paudel",
+  "readTime": "4 minutes "
+},
+
+{
+  "id": 4,
+  "title": "Cinnamon",
+  "scientificName": "Cinnamomum verum",
+  "description": "Cinnamon (Cinnamomum verum), also known as Ceylon cinnamon, is a small evergreen tree or bushy shrub belonging to the laurel family (Lauraceae). It typically grows 8 to 15 meters tall in the wild but as a cultivated plant is often kept shorter by coppicing. The tree has thick, smooth bark from which the spice is derived by peeling the dried inner bark.Overall, cinnamon is a fragrant, versatile medicinal and culinary herb with deep cultural and economic importance, especially in South Asia and Sri Lanka",
+  "category": "Culinary Herbs",
+  "uses": [
+    "1)Blood sugar control in diabetes",
+    "2)Relief from cold, flu, and cough",
+    "Antiseptic for minor Wounds",
+    "3( anti-inflammatory for arthritis and joint pain",
+    "4)Boosting digestion and appetite",
+    "Antimicrobial treatment for infections",
+    "5(Cardiovascular health support",
+    "6)Memory and brain health enhancement"
+  ],
+  "chemicalCompounds": [
+    "Cinnamaldehyde",
+    "Eugenol",
+    "Cinnamic acid",
+    "Coumarin",
+    "Cinnamyl acetate",
+    "Borneol",
+    "Polyphenols"
+  ],
+  "medicinalProperties": [
+    "Antioxidant",
+    "Anti-inflammatory",
+    "Antimicrobial",
+    "Antiviral",
+    "Antidiabetic",
+    "Blood sugar regulator",
+    "Antiseptic",
+    "Memory enhancer"
+  ],
+  "growingConditions": "Tropical climate, warm temperature, well-drained soil, slightly acidic to neutral pH (6.0-7.0), partial to full sunlight, high humidity, protection from strong wind, moderate fertilizer, organic-rich soil.",
+  "harvestingTips": "Harvest the cinnamon bark when the tree is 2-3 years old; the bark is peeled off from branches and dried properly. The best quality bark peels easily into thin curls.",
+  "image": "/assets/images/plants/cinnemon3.jpg",
+  "thumbnail": "/assets/images/plants/cinnemon3.jpg",
+  "path": "plants_data/cinnamon.html",
+  "publishedDate": "2015-10-05",
+  "author": "P. Kawatra",
+  "readTime": "5 minutes "
+},
+
+
+{
+  "id": 3,
+  "title": "Ashwagandha",
+  "scientificName": "Withania somnifera",
+  "description": "Ashwagandha (Withania somnifera) contains a rich variety of chemical compounds responsible for its medicinal properties. The primary bioactive constituents are withanolides, which are steroidal lactones, including compounds like withaferin A, withanolide A, and withanolide D. These compounds structurally resemble the ginsenosides found in Panax ginseng, earning Ashwagandha the nickname \"Indian ginseng\"The mineral content includes essential elements like copper, iron, zinc, magnesium, manganese, cobalt, and nickel, which also support its health benefits .This detailed phytochemical content explains its wide use in traditional Indian medicine and growing scientific validation.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "1)Root powder or extract used as a general tonic",
+    "2(Leaf paste applied for inflammation and skin infections",
+    "3)Leaf juice used for conjunctivitis",
+    "4)Bark decoction for asthma and bed sores",
+    "4)Herbal teas, syrups, and tablets prepared from roots and extracts"
+  ],
+  "chemicalCompounds": [
+    "Withanolides",
+    "Withaferin-A",
+    "alkaloids (Withanine",
+    "Somniferine)",
+    "steroidal lactones",
+    "saponins",
+    "glycosides"
+  ],
+  "medicinalProperties": [
+    "Antiseptic",
+    "anti-inflammatory",
+    "adaptogenic",
+    "immunomodulatory",
+    "neuroprotective",
+    "antitumor",
+    "aphrodisiac",
+    "antioxidant",
+    "analgesic",
+    "antistress",
+    "antibacterial",
+    "antipyretic"
+  ],
+  "growingConditions": "Full sun (at least 6 hours daily)Warm climate,Sandy loam soil, Well-drained soil, Neutral to slightly alkaline pH (7.5\u20138.0)Avoid clay-heavy or waterlogged soil, Add compost or organic manure, Plant seeds half an inch deep, Space plants 18\u201324 inches apart ,Use deep containers of at least 10-12 inches if potted",
+  "harvestingTips": "Harvest roots after 5\u20136 months of growth, Best harvested during late autumn or early winter, Dig carefully to avoid damaging roots, Wash roots thoroughly before drying or processing",
+  "image": "/assets/images/plants/ashwagandha4.jpg",
+  "thumbnail": "/assets/images/plants/ashwagandha4.jpg",
+  "path": "plants_data/ashwagandha.html",
+  "publishedDate": "2021-08-10",
+  "author": "Mir et al.",
+  "readTime": "3 minute"
+},
+
+{
+  "id": 7,
+  "title": "Tulsi",
+  "scientificName": "Ocimum Tenuiflorum ",
+  "description": "Tulsi is known as \u201cMother Tulsi\u201d and \u201cHoly Basil\u201d in India. It is a small bush which grows 30-60 cm tall, has fragrant leaves and small purple or pink flowers. It is planted in the courtyard of every house because it is considered an antidote to sin and good for health.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Fresh 4\u20135 leaves chewed daily on empty stomach",
+    "Tulsi kadha (decoction) for cold, cough & fever",
+    "Tulsi tea for stress relief and immunity",
+    "Tulsi ark (distilled extract) \u2013 10-15 drops in water",
+    "Tulsi powder with honey for respiratory problems",
+    "Tulsi juice for skin problems and acne",
+    "Tulsi smoke (dhoop) for purifying air and mosquito repellent"
+  ],
+  "chemicalCompounds": [
+    "Eugenol",
+    "Ursolic acid",
+    "Rosmarinic acid",
+    "Linalool",
+    "Caryophyllene",
+    "Oleanolic acid",
+    "Carvacrol",
+    "\u03b2-caryophyllene",
+    "Ocimumosides A & B",
+    "Apigenin",
+    "Luteolin",
+    "Orientin"
+  ],
+  "medicinalProperties": [
+    "Adaptogenic",
+    "Immunomodulator",
+    "Anti-inflammatory",
+    "Antibacterial",
+    "Antiviral",
+    "Antioxidant",
+    "Antifungal",
+    "Antidiabetic",
+    "Antistress",
+    "Expectorant",
+    "Analgesic",
+    "Antipyretic",
+    "Cardioprotective",
+    "Radioprotective"
+  ],
+  "growingConditions": "Full sunlight (6\u20138 hours daily) Well-drained loamy or sandy-loam soil pH 6\u20137.5 Can be grown in pots, balconies, terrace Seeds or stem cuttings for propagation Perennial plant (lives 2\u20133 years easily)",
+  "harvestingTips": "Harvest leaves in the morning after dew dries Pluck top 3\u20134 leaves with stem to encourage bushy growth Never remove more than 30% of plant at once Regular plucking increases lifespan and yield",
+  "image": "/assets/images/plants/tulsi2.jpg",
+  "thumbnail": "/assets/images/plants/tulsi2.jpg",
+  "path": "plants_data/tulsi.html",
+  "publishedDate": "1753-05-01",
+  "author": "Carl Linnaeus",
+  "readTime": "5 min"
+},
+
+{
+  "id": 8,
+  "title": "Turmeric ",
+  "scientificName": "Curcuma longa",
+  "description": "Turmeric is a perennial herb that belongs to the ginger family. Its root (rhizome) is dried to form the yellow-orange powder we call turmeric. In Ayurveda, it's called \"Haridra\" and has been used for over 4,000 years.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Drinking golden milk daily to boost immunity",
+    "Applying fresh turmeric paste on cuts, burns, or wounds for quick healing",
+    "Taking turmeric with warm milk during sprains, injuries, or body pain",
+    "Using turmeric face pack (with curd, besan, or milk) for acne, pigmentation, and glowing skin",
+    "Consuming turmeric regularly for joint pain and arthritis relief"
+  ],
+  "chemicalCompounds": [
+    "Curcumin (main active)",
+    "Turmerone",
+    "Atlantone",
+    "Zingiberene",
+    "Curcumenol",
+    "Curdione",
+    "Demethoxycurcumin",
+    "Bisdemethoxycurcumin",
+    "Volatile oils",
+    "Resins",
+    "Bitter principles"
+  ],
+  "medicinalProperties": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Antiseptic",
+    "Antibacterial",
+    "Antiviral",
+    "Anti-cancer",
+    "Analgesic (pain-reliever)",
+    "Hepatoprotective (liver protector)",
+    "Digestive",
+    "Blood purifier",
+    "Wound healer",
+    "Immunomodulator"
+  ],
+  "growingConditions": "Full sun (6\u20138 hours daily) Well-drained loamy or red soil pH 5.5\u20137.5 Can grow in big pots or ground Planting time: June\u2013July (rainy season) Rhizomes (fingers) ",
+  "harvestingTips": "8\u201310 months after planting (when leaves turn yellow and dry) Carefully dig out rhizomes Keep some fingers for next season planting Boil freshly dug rhizomes for 30\u201345 min, dry in sun 10\u201315 days, then polish and store",
+  "image": "/assets/images/plants/turmeric4.jpg",
+  "thumbnail": "assets/images/plants/turmeric4.jpg",
+  "path": "plants_data/turmeric.html",
+  "publishedDate": "1753-05-01",
+  "author": "Linnaeus (L.)",
+  "readTime": "7 min"
+},
+
+{
+  "id": 2,
+  "title": "Aloe Vera",
+  "scientificName": "Aloe barbadensis Mill. ",
+  "description": "Aloe Vera is a plant with thick, resinous leaves that grows in dry areas. Its gel is cool, viscous and transparent, which provides quick relief when applied to the skin. In Ayurveda, it is called \"Ghritkumari\" or \"Kumari\" and it calms Pitta Dosha. It is very beneficial in burning sensation, minor wounds, sunburn, acne, hair fall, constipation, sugar control, and boosting immunity. When taken internally, it cleanses the stomach, strengthens the liver, and purifies the blood. When applied externally, it makes the skin glow, reduces wrinkles, and prevents infections.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Fresh gel applied on sunburn. ",
+    "Gel applied on minor cuts and abrasions. ",
+    "Gel applied on small burns to reduce pain and speed healing. ",
+    "Gel used as natural moisturizer for dry skin. ",
+    "Processed Aloe vera gel or creams for acne, eczema support (topical). "
+  ],
+  "chemicalCompounds": [
+    "Aloe-emodin",
+    "Aloin",
+    "Acemannan (polysaccharide)",
+    "Barbaloin",
+    "Anthraquinones",
+    "Salicylic acid",
+    "Lupeol",
+    "Urea nitrogen",
+    "Cinnamonic acid",
+    "Phenols",
+    "Sulfur",
+    "Vitamins (A",
+    "C",
+    "E",
+    "B12)",
+    "Enzymes (bradykinase)",
+    "Minerals (calcium",
+    "magnesium",
+    "zinc)"
+  ],
+  "medicinalProperties": [
+    "Anti-inflammatory",
+    "Antibacterial",
+    "Antiviral",
+    "Antifungal",
+    "Antioxidant",
+    "Wound healing",
+    "Laxative",
+    "Immunomodulator",
+    "Moisturizing",
+    "Analgesic (pain-relieving)",
+    "Hypoglycemic (blood sugar lowering)",
+    "Anti-ulcer",
+    "Burn healing"
+  ],
+  "growingConditions": "Full sunlight (6-8 hours), Well-draining sandy soil, Pots with drainage holes, Can grow in balcony or terrace, Tolerates neglect, Drought resistant, Protect from heavy rain and waterlogging",
+  "harvestingTips": "Cut outer mature leaves from base with sharp knife Choose thick, lower leaves (at least 1 year old) Leave at least 8-10 leaves on plant for its health Harvest in morning for maximum gel After cutting, let yellow sap (aloin) drain for 10-15 min before using gel",
+  "image": "/assets/images/plants/aloevera4.jpg",
+  "thumbnail": "/assets/images/plants/aloevera4.jpg",
+  "path": "plants_data/aloe-vera.html",
+  "publishedDate": "1768-04-06",
+  "author": "Burman",
+  "readTime": "6 min"
+}
+
+    
+    ]
+}
