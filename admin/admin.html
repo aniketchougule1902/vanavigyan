@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - VanaVigyan Plant Research</title>
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/index.html" class="brand">Chem<span class="brand-accent">Lab</span> Admin</a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/index.html" class="nav-link">View Site</a></li>
+                    <li><a href="#articles" class="nav-link">Manage Articles</a></li>
+                    <li><a href="#uploads" class="nav-link">Upload Images</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Admin Content -->
+    <div class="admin-container">
+        <!-- Header -->
+        <div class="admin-header">
+            <h1>Plant Articles Management</h1>
+            <p>Create and manage plant research articles</p>
+        </div>
+
+        <!-- Add New Article Button -->
+        <div class="add-article-section">
+            <button class="add-article-btn" id="addArticleBtn">
+                <span class="plus-icon">+</span>
+                Add New Plant Article
+            </button>
+        </div>
+
+        <!-- Articles List -->
+        <div class="articles-list" id="articlesList">
+            <!-- Articles will be loaded here -->
+        </div>
+
+        <!-- Modal for Article Editor -->
+        <div class="modal" id="articleModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Add New Plant Article</h2>
+                    <button class="close-btn" id="closeModal">&times;</button>
+                </div>
+                
+                <form id="articleForm" class="article-form">
+                    <!-- Basic Information -->
+                    <div class="form-section">
+                        <h3>Basic Information</h3>
+                        <div class="form-group">
+                            <label for="plantName">Plant Name *</label>
+                            <input type="text" id="plantName" name="plantName" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="scientificName">Scientific Name *</label>
+                                <input type="text" id="scientificName" name="scientificName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Category *</label>
+                                <select id="category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="Medicinal Plants">Medicinal Plants</option>
+                                    <option value="Aromatic Plants">Aromatic Plants</option>
+                                    <option value="Culinary Herbs">Culinary Herbs</option>
+                                    <option value="Ornamental Plants">Ornamental Plants</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="slug">URL Slug *</label>
+                            <input type="text" id="slug" name="slug" required placeholder="aloe-vera">
+                            <small>This will be used in the URL: /plant_data/[slug].html</small>
+                        </div>
+                    </div>
+
+                    <!-- Author Information -->
+                    <div class="form-section">
+                        <h3>Author & Publishing</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="authorName">Author Name *</label>
+                                <input type="text" id="authorName" name="authorName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="publishDate">Publish Date *</label>
+                                <input type="date" id="publishDate" name="publishDate" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="readTime">Read Time *</label>
+                                <input type="text" id="readTime" name="readTime" required placeholder="5 min read">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location" placeholder="Research Lab, University">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Meta Information -->
+                    <div class="form-section">
+                        <h3>SEO & Meta Information</h3>
+                        <div class="form-group">
+                            <label for="metaDescription">Meta Description *</label>
+                            <textarea id="metaDescription" name="metaDescription" required rows="3" placeholder="Brief description for search results..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Image Upload -->
+                    <div class="form-section">
+                        <h3>Plant Images (Max 4)</h3>
+                        <div class="image-upload-section">
+                            <div class="image-preview-grid" id="imagePreviewGrid">
+                                <div class="image-upload-box" id="imageUploadBox">
+                                    <input type="file" id="imageUpload" accept="image/*" multiple style="display: none;">
+                                    <label for="imageUpload" class="upload-label">
+                                        <span class="upload-icon">+</span>
+                                        <span>Add Images</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <small>Upload up to 4 images. First image will be used as main image.</small>
+                        </div>
+                    </div>
+
+                    <!-- Content Sections -->
+                    <div class="form-section">
+                        <h3>Plant Content</h3>
+                        
+                        <!-- Rich Text Editor for Description -->
+                        <div class="form-group">
+                            <label for="description">Description *</label>
+                            <div id="descriptionEditor" class="rich-text-editor"></div>
+                        </div>
+
+                        <!-- Article Content (Optional) -->
+                        <div class="form-group">
+                            <label>Additional Article Content (Optional)</label>
+                            <div class="editor-toggle">
+                                <button type="button" class="btn-toggle active" data-target="basicContent">Basic Form</button>
+                                <button type="button" class="btn-toggle" data-target="richTextContent">Rich Text Editor</button>
+                            </div>
+                        </div>
+
+                        <!-- Basic Content Form -->
+                        <div id="basicContent" class="content-section active">
+                            <div class="form-group">
+                                <label for="medicinalProperties">Medicinal Properties (comma separated)</label>
+                                <input type="text" id="medicinalProperties" name="medicinalProperties" placeholder="Anti-inflammatory, Antimicrobial, Moisturizing...">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="commonUses">Common Uses (one per line)</label>
+                                <textarea id="commonUses" name="commonUses" rows="4" placeholder="Skin care and moisturization&#10;Digestive health support&#10;Wound healing..."></textarea>
+                            </div>
+
+                            <!-- Local Names Table Section -->
+                            <div class="form-group">
+                                <label>Local Names</label>
+                                <div id="localNamesContainer">
+                                    <div class="dynamic-item">
+                                        <div class="dynamic-item-header">
+                                            <span>Local Name #1</span>
+                                            <button type="button" class="btn-remove">Remove</button>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <input type="text" class="local-name-locality" placeholder="Locality (e.g., India, Tamil Nadu)">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="local-name-name" placeholder="Local Name (e.g., Aloe Vera)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-add-more" id="addLocalName">+ Add Another Local Name</button>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="growingConditions">Growing Conditions</label>
+                                    <input type="text" id="growingConditions" name="growingConditions" placeholder="Well-drained soil, bright indirect light">
+                                </div>
+                                <div class="form-group">
+                                    <label for="waterRequirements">Water Requirements</label>
+                                    <input type="text" id="waterRequirements" name="waterRequirements" placeholder="Moderate watering, allow soil to dry between">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="temperatureRange">Temperature Range</label>
+                                    <input type="text" id="temperatureRange" name="temperatureRange" placeholder="15-30°C (59-86°F)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="harvestingTips">Harvesting Tips</label>
+                                    <input type="text" id="harvestingTips" name="harvestingTips" placeholder="Harvest mature leaves from the bottom of the plant">
+                                </div>
+                            </div>
+
+                            <!-- Preparation Methods -->
+                            <div class="form-group">
+                                <label>Preparation Methods</label>
+                                <div id="preparationMethodsContainer">
+                                    <div class="dynamic-item">
+                                        <div class="dynamic-item-header">
+                                            <span>Method #1</span>
+                                            <button type="button" class="btn-remove">Remove</button>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <input type="text" class="prep-method-title" placeholder="Method Title (e.g., Topical Gel)">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="prep-method-description" placeholder="Method description..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-add-more" id="addPreparationMethod">+ Add Another Method</button>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="chemicalCompounds">Chemical Compounds (comma separated)</label>
+                                <input type="text" id="chemicalCompounds" name="chemicalCompounds" placeholder="Aloin, Emodin, Acemannan, Aloe-emodin...">
+                            </div>
+
+                            <!-- Related Research -->
+                            <div class="form-group">
+                                <label>Related Research</label>
+                                <div id="relatedResearchContainer">
+                                    <div class="dynamic-item">
+                                        <div class="dynamic-item-header">
+                                            <span>Research #1</span>
+                                            <button type="button" class="btn-remove">Remove</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="research-title" placeholder="Research Title">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="research-description" placeholder="Research description..."></textarea>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <input type="text" class="research-author" placeholder="Author Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="research-year" placeholder="Year">
+                                            </div>
+                            </div>             <!-- In the related research dynamic item section, add this after the author/year row -->
+<div class="form-row">
+    <div class="form-group">
+        <input type="text" class="research-link" placeholder="Research Paper Link (URL)">
+    </div>
+</div>
+                                        
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-add-more" id="addRelatedResearch">+ Add Another Research</button>
+                            </div>
+                        </div>
+
+                        <!-- Rich Text Content -->
+                        <div id="richTextContent" class="content-section">
+                            <div class="form-group">
+                                <label>Full Article Content</label>
+                                <div id="articleContentEditor" class="rich-text-editor"></div>
+                                <small>Use this editor for complete article content with formatting. This will replace the basic form content.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                        <button type="button" class="btn btn-primary" id="saveDraftBtn">Save Draft</button>
+                        <button type="button" class="btn btn-success" id="publishBtn">Publish Article</button>
+                        <button type="button" class="btn btn-info" id="generateJSONBtn">Generate JSON Only</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rich Text Editor JS -->
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    <script src="/assets/js/admin.js"></script>
+</body>
+</html>
