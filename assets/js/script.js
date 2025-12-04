@@ -1,3 +1,25 @@
+// Load Google Analytics gtag.js
+(function() {
+  const gaScript = document.createElement('script');
+  gaScript.async = true;
+  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-JV2GY2JTVW";
+  document.head.appendChild(gaScript);
+})();
+
+// Initialize dataLayer and gtag function
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+// Configure GA
+gtag('js', new Date());
+gtag('config', 'G-JV2GY2JTVW');
+
+
+
+
+
 // Main Application JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Initializing VanaVigyan Plant Research...');
