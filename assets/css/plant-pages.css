@@ -465,13 +465,13 @@ body {
 }
 
 .uses-list li {
-    background: rgba(112, 236, 214, 0.8);
-    color: var(--accent);
+  background: rgb(206 255 255 / 80%);
+    color: #006aa3;
     padding: 1rem;
     border-radius: var(--border-radius-sm);
     font-weight: 500;
     transition: var(--transition);
-    border-left: 4px solid var(--accent);
+    border-left: 4px solid #00ffd9;
     position: relative;
     padding-left: 2.5rem;
 }
