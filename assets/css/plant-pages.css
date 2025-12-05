@@ -465,7 +465,7 @@ body {
 }
 
 .uses-list li {
-    background: rgba(255, 107, 107, 0.1);
+    background: rgba(9, 231, 40, 0.8);
     color: var(--accent);
     padding: 1rem;
     border-radius: var(--border-radius-sm);
