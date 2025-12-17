@@ -397,6 +397,52 @@
   "publishedDate": "1768-04-06",
   "author": "Burman",
   "readTime": "6 min"
+},
+    {
+  "id": 9,
+  "title": "Ajwain",
+  "scientificName": "Trachyspermum ammi",
+  "description": "Ajwain is a small aromatic plant whose seeds are widely used in Indian homes as a natural medicine. The seeds have a strong smell and sharp taste. In Ayurveda, Ajwain is mainly known for improving digestion, reducing gas, and relieving stomach cramps. It is also helpful in cold, cough, sore throat, toothache, joint pain, and infections because of its antiseptic and anti-inflammatory properties. Ajwain oil is extremely strong and widely used for chest congestion and joint massage. The plant grows easily at home and needs warm sunlight.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Ajwain water for digestion and gas",
+    "Seeds chewed for stomach cramps",
+    "Ajwain steam inhalation for cold and blocked nose",
+    "Ajwain oil for chest congestion",
+    "Ajwain paste for toothache",
+    "Ajwain smoke for curing damp smell and insects",
+    "Ajwain seed tea for menstrual pain",
+    "Ajwain powder for acidity"
+  ],
+  "chemicalCompounds": [
+    "thymol",
+    "gamma-terpinene",
+    "p-cymene",
+    "beta-pinene",
+    "carvacrol",
+    "flavonoids",
+    "tannins",
+    "saponins"
+  ],
+  "medicinalProperties": [
+    "antiseptic",
+    "anti-inflammatory",
+    "antispasmodic",
+    "analgesic (pain-relieving)",
+    "antimicrobial",
+    "antifungal",
+    "carminative (gas-relieving)",
+    "expectorant",
+    "antioxidant"
+  ],
+  "growingConditions": "well-drained soil, full sunlight, warm climate, regular pruning, moderate organic manure, avoid waterlogging. Light to moderate watering; water only when top soil becomes dry. Temperature range: 20°C to 35°C (ideal warm climate)",
+  "harvestingTips": "Harvest seeds when flower heads turn pale brown. Cut the whole cluster and dry it in shade. Separate seeds by rubbing gently. Store in airtight container to preserve aroma",
+  "image": "",
+  "thumbnail": "",
+  "path": "plants_data/ajwain.html",
+  "publishedDate": "2025-11-26",
+  "author": "Yash Shinde",
+  "readTime": "5 Min"
 }
 
     
