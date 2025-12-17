@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="/vanavigyan/index.html">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="#">Plant Database</a></li>
                     <li><a href="#">Research Papers</a></li>
                     <li><a href="#">About Us</a></li>
