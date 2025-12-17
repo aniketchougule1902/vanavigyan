@@ -438,8 +438,8 @@
   "growingConditions": "well-drained soil, full sunlight, warm climate, regular pruning, moderate organic manure, avoid waterlogging. Light to moderate watering; water only when top soil becomes dry. Temperature range: 20°C to 35°C (ideal warm climate)",
   "harvestingTips": "Harvest seeds when flower heads turn pale brown. Cut the whole cluster and dry it in shade. Separate seeds by rubbing gently. Store in airtight container to preserve aroma",
   "image": "/assets/images/plants/ajwain.jpg",
-  "thumbnail": "",
-  "path": "plants_data/ajwain.html",
+  "thumbnail": "/assets/images/plants/ajwain.jpg",
+  "path": "/plants_data/ajwain.html",
   "publishedDate": "2025-11-26",
   "author": "Yash Shinde",
   "readTime": "5 Min"
