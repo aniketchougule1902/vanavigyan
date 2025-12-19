@@ -55,7 +55,7 @@
   "image": "/assets/images/plants/neem1.jpg",
   "thumbnail": "/assets/images/plants/neem1.jpg",
   "path": "plants_data/neem.html",
-  "publishedDate": "1999-11-23",
+  "publishedDate": "2025-11-23",
   "author": "H. S. Puri",
   "readTime": "6 Min"
 },
@@ -97,7 +97,7 @@
   "image": "/assets/images/plants/hibiscus1.jpg",
   "thumbnail": "assets/images/plants/hibiscus1.jpg",
   "path": "plants_data/hibiscus.html",
-  "publishedDate": "2022-09-01",
+  "publishedDate": "2025-09-01",
   "author": "E. Montalvo-Gonz\u00e1lez",
   "readTime": "4 minutes "
 },
@@ -140,7 +140,7 @@
   "image": "/assets/images/plants/ginger3.jpg",
   "thumbnail": "/assets/images/plants/ginger3.jpg",
   "path": "/plants_data/ginger.html",
-  "publishedDate": "2024-05-13",
+  "publishedDate": "2025-10-13",
   "author": "Keshab Raj Paudel",
   "readTime": "4 minutes "
 },
@@ -185,7 +185,7 @@
   "image": "/assets/images/plants/cinnemon3.jpg",
   "thumbnail": "/assets/images/plants/cinnemon3.jpg",
   "path": "/plants_data/cinnamon.html",
-  "publishedDate": "2015-10-05",
+  "publishedDate": "2025-10-05",
   "author": "P. Kawatra",
   "readTime": "5 minutes "
 },
@@ -232,7 +232,7 @@
   "image": "/assets/images/plants/ashwagandha4.jpg",
   "thumbnail": "/assets/images/plants/ashwagandha4.jpg",
   "path": "/plants_data/ashwagandha.html",
-  "publishedDate": "2021-08-10",
+  "publishedDate": "2025-11-22",
   "author": "Mir et al.",
   "readTime": "3 minute"
 },
@@ -287,7 +287,7 @@
   "image": "/assets/images/plants/tulsi2.jpg",
   "thumbnail": "/assets/images/plants/tulsi2.jpg",
   "path": "/plants_data/tulsi.html",
-  "publishedDate": "1753-05-01",
+  "publishedDate": "2025-11-01",
   "author": "Carl Linnaeus",
   "readTime": "5 min"
 },
@@ -337,7 +337,7 @@
   "image": "/assets/images/plants/turmeric4.jpg",
   "thumbnail": "/assets/images/plants/turmeric4.jpg",
   "path": "/plants_data/turmeric.html",
-  "publishedDate": "1753-05-01",
+  "publishedDate": "2025-12-01",
   "author": "Linnaeus (L.)",
   "readTime": "7 min"
 },
@@ -394,7 +394,7 @@
   "image": "/assets/images/plants/aloevera4.jpg",
   "thumbnail": "/assets/images/plants/aloevera4.jpg",
   "path": "/plants_data/aloe-vera.html",
-  "publishedDate": "1768-04-06",
+  "publishedDate": "2025-12-06",
   "author": "Burman",
   "readTime": "6 min"
 },
@@ -443,7 +443,321 @@
   "publishedDate": "2025-11-26",
   "author": "Yash Shinde",
   "readTime": "5 Min"
+},
+
+    {
+  "id": 10,
+  "title": "Cloves",
+  "scientificName": "Syzygium aromaticum",
+  "description": "Cloves are aromatic dried flower buds widely used in Ayurveda and traditional medicine. They contain a powerful essential oil rich in eugenol, which provides strong analgesic, antiseptic, and antimicrobial effects. Cloves are commonly used to relieve toothache, gum infections, sore throat, cold, cough, and digestive problems. They help reduce inflammation, improve digestion, eliminate bad breath, and prevent infections. Clove oil is especially effective for pain relief and oral health.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Toothache and gum pain relief",
+    "Cold, cough, and sore throat",
+    "Digestive issues (gas, nausea, indigestion)",
+    "Bad breath removal",
+    "Headache relief",
+    "Pain and inflammation reduction",
+    "Infection prevention",
+    "Steam inhalation for respiratory issues",
+    "Herbal tea and kadha",
+    "Oral health care"
+  ],
+  "chemicalCompounds": [
+    "Eugenol",
+    "Eugenyl acetate",
+    "Beta-caryophyllene",
+    "Vanillin",
+    "Flavonoids",
+    "Tannins",
+    "Methyl salicylate",
+    "Sesquiterpenes"
+  ],
+  "medicinalProperties": [
+    "Antiseptic",
+    "Antimicrobial",
+    "Antifungal",
+    "Antiviral",
+    "Analgesic",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Carminative",
+    "Expectorant",
+    "Anesthetic"
+  ],
+  "growingConditions": "Tropical climate with warm temperatures, deep fertile and well-drained soil, partial shade to full sunlight, high humidity, regular watering, sheltered from strong winds. Clove trees require large open spaces and are not suitable for small home gardens.",
+  "harvestingTips": "Harvest unopened flower buds before blooming when they turn green to light pink. Sun-dry the buds until they become dark brown. Avoid harvesting from very young trees. Store dried cloves in airtight containers away from moisture.",
+  "image": "",
+  "thumbnail": "",
+  "path": "plants_data/cloves.html",
+  "publishedDate": "2025-11-26",
+  "author": "Yash Shinde",
+  "readTime": "5 Min"
+},
+
+    {
+  "id": 11,
+  "title": "Lemongrass",
+  "scientificName": "Cymbopogon citratus / Cymbopogon flexuosus",
+  "description": "Lemongrass is a tall, aromatic grass widely used in Indian households and Ayurveda. It has a natural lemon-like fragrance and is commonly consumed as herbal tea or decoction. Lemongrass contains essential oils rich in citral, which helps improve digestion, reduce inflammation, relieve stress, and fight infections. It is used for treating stomach pain, gas, indigestion, cold, cough, fever, and for detoxification. Its calming effect helps reduce anxiety and promotes overall wellness.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Digestive problems (gas, indigestion, stomach pain)",
+    "Cold, cough, and fever",
+    "Stress and anxiety relief",
+    "Detoxification",
+    "Blood pressure support",
+    "Lemongrass tea",
+    "Steam inhalation for respiratory relief",
+    "Massage oil for pain relief",
+    "Joint and muscle pain",
+    "Herbal decoctions (kaadha)"
+  ],
+  "chemicalCompounds": [
+    "Citral",
+    "Myrcene",
+    "Limonene",
+    "Geraniol",
+    "Citronellal",
+    "Neral",
+    "Flavonoids",
+    "Tannins",
+    "Beta-pinene"
+  ],
+  "medicinalProperties": [
+    "Anti-inflammatory",
+    "Antibacterial",
+    "Antifungal",
+    "Antimicrobial",
+    "Analgesic",
+    "Antioxidant",
+    "Digestive stimulant",
+    "Carminative",
+    "Antipyretic",
+    "Diuretic",
+    "Sedative"
+  ],
+  "growingConditions": "Well-drained soil, full sunlight, warm tropical climate, regular watering without waterlogging, organic compost, grows well in pots or open ground, regular trimming promotes fresh growth.",
+  "harvestingTips": "Harvest stalks when they are 1–2 cm thick by cutting from the base. Harvest early morning for best aroma. Avoid over-harvesting from a single clump. Leaves can be shade-dried for storage and regular trimming encourages new growth.",
+  "image": "",
+  "thumbnail": "",
+  "path": "plants_data/lemongrass.html",
+  "publishedDate": "2025-11-26",
+  "author": "Yash Shinde",
+  "readTime": "5 Min"
+},
+
+    {
+  "id": 12,
+  "title": "Mint",
+  "scientificName": "Mentha arvensis",
+  "description": "Mint, commonly known as Pudina, is a highly aromatic and cooling medicinal herb widely used in Indian households and Ayurveda. Its fresh green leaves provide an instant cooling sensation and are easy to grow at home. Mint improves digestion, reduces gas and acidity, relieves nausea and vomiting, freshens breath, and helps calm headaches. The presence of menthol gives mint its cooling, soothing, and decongestant properties. It is also beneficial for skin irritation, stress relief, and respiratory problems.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Gas, indigestion, and acidity relief",
+    "Nausea and vomiting",
+    "Headache and migraine relief",
+    "Sinus and nasal congestion",
+    "Bad breath removal",
+    "Skin itching and irritation",
+    "Stress and anxiety relief",
+    "Mint tea for digestion",
+    "Steam inhalation for cold",
+    "Cooling herbal remedies"
+  ],
+  "chemicalCompounds": [
+    "Menthol",
+    "Menthone",
+    "Limonene",
+    "Pulegone",
+    "Carvone",
+    "Eucalyptol",
+    "Flavonoids",
+    "Rosmarinic acid",
+    "Tannins",
+    "Essential oils"
+  ],
+  "medicinalProperties": [
+    "Cooling",
+    "Digestive stimulant",
+    "Antispasmodic",
+    "Anti-inflammatory",
+    "Antimicrobial",
+    "Antiseptic",
+    "Analgesic",
+    "Carminative",
+    "Antioxidant",
+    "Decongestant"
+  ],
+  "growingConditions": "Moist fertile soil, partial sunlight, frequent pruning, shallow containers suitable for home gardening, fast-growing runners, organic manure recommended.",
+  "harvestingTips": "Harvest early morning for best aroma, pluck top leaves to promote bushy growth, avoid flowering by regular pruning, never remove more than one-third of the plant at a time.",
+  "image": "",
+  "thumbnail": "",
+  "path": "plants_data/mint.html",
+  "publishedDate": "2025-11-26",
+  "author": "Yash Shinde",
+  "readTime": "5 Min"
+},
+
+    {
+  "id": 13,
+  "title": "Curry Leaves",
+  "scientificName": "Murraya koenigii",
+  "description": "Curry leaves, also known as Kadi Patta or Kari Patta, are aromatic medicinal leaves widely used in Indian cooking and Ayurveda. The leaves have a strong fragrance and are rich in natural antioxidants such as carbazole alkaloids. Curry leaves are known for improving digestion, regulating blood sugar levels, supporting liver health, promoting hair growth, and reducing inflammation. Regular consumption helps detoxify the body and improves overall metabolic health.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Digestive improvement",
+    "Blood sugar regulation",
+    "Hair growth and scalp health",
+    "Liver protection",
+    "Weight management",
+    "Chewing fresh leaves for wellness",
+    "Curry leaf powder in food",
+    "Herbal decoctions (kaadha)",
+    "Scalp massage using curry leaf oil",
+    "Daily tempering in Indian dishes"
+  ],
+  "chemicalCompounds": [
+    "Carbazole alkaloids",
+    "Mahanimbine",
+    "Koenimbine",
+    "Girinimbine",
+    "Flavonoids",
+    "Antioxidants",
+    "Beta-caryophyllene",
+    "Alpha-pinene",
+    "Essential oils"
+  ],
+  "medicinalProperties": [
+    "Antioxidant",
+    "Anti-inflammatory",
+    "Antidiabetic",
+    "Antimicrobial",
+    "Hepatoprotective",
+    "Anti-obesity",
+    "Digestive stimulant",
+    "Antihyperlipidemic"
+  ],
+  "growingConditions": "Well-drained soil, warm tropical climate, partial to full sunlight, organic compost-rich soil, regular pruning for bushy growth.",
+  "harvestingTips": "Pluck mature dark green leaves, avoid over-harvesting from young plants, harvest early morning for best aroma, regular pruning encourages new growth.",
+  "image": "",
+  "thumbnail": "",
+  "path": "plants_data/curry-leaves.html",
+  "publishedDate": "2025-11-26",
+  "author": "Yash Shinde",
+  "readTime": "5 Min"
+},
+
+    {
+  "id": 14,
+  "title": "Amla",
+  "scientificName": "Phyllanthus emblica (syn. Emblica officinalis)",
+  "description": "Amla, also known as Indian Gooseberry, is one of the most powerful medicinal fruits used in Ayurveda. It is among the richest natural sources of Vitamin C and contains high levels of antioxidants, polyphenols, and tannins. Amla balances all three doshas (Vata, Pitta, Kapha) and is widely used to boost immunity, improve digestion, control blood sugar, support liver health, enhance skin glow, strengthen hair, and slow down ageing. Modern research also supports its role in cholesterol management, liver protection, and anti-cancer activity.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Immunity booster",
+    "Digestion improvement",
+    "Blood sugar control",
+    "Liver detoxification",
+    "Hair strengthening and dandruff control",
+    "Skin glow and anti-aging",
+    "Constipation relief",
+    "Cholesterol management",
+    "Amla juice and powder consumption",
+    "Daily Ayurvedic formulations"
+  ],
+  "chemicalCompounds": [
+    "Vitamin C (Ascorbic acid)",
+    "Ellagic acid",
+    "Gallic acid",
+    "Emblicanin A",
+    "Emblicanin B",
+    "Flavonoids",
+    "Polyphenols",
+    "Tannins",
+    "Phyllembelic acid",
+    "Quercetin",
+    "Kaempferol"
+  ],
+  "medicinalProperties": [
+    "Antioxidant",
+    "Anti-inflammatory",
+    "Antimicrobial",
+    "Antiviral",
+    "Antidiabetic",
+    "Hepatoprotective",
+    "Cardioprotective",
+    "Immunomodulatory",
+    "Anti-ulcer",
+    "Anti-aging",
+    "Anti-cancer (research-based)"
+  ],
+  "growingConditions": "Full sunlight, well-drained sandy or loamy soil, drought-tolerant once established, wide spacing, warm and dry climate preferred, slightly alkaline soil acceptable.",
+  "harvestingTips": "Harvest during winter (November–February) when fruits turn yellow-green and firm. Use pruning shears to cut fruit clusters. Handle gently to avoid bruising. Wash and sun-dry immediately if making powder.",
+  "image": "",
+  "thumbnail": "",
+  "path": "plants_data/amla.html",
+  "publishedDate": "2025-11-26",
+  "author": "Yash Shinde",
+  "readTime": "5 Min"
+},
+
+    {
+  "id": 15,
+  "title": "Garlic",
+  "scientificName": "Allium sativum",
+  "description": "Garlic, commonly known as Lahsun, is a bulbous medicinal plant widely used in Indian households both as a spice and natural medicine. Each bulb consists of multiple cloves rich in sulfur-containing compounds, especially allicin, which gives garlic its strong smell and medicinal power. Garlic helps fight infections, boosts immunity, controls blood pressure, reduces cholesterol, improves digestion, and protects heart health. Scientific studies confirm its antibacterial, antifungal, antiviral, and anti-inflammatory effects.",
+  "category": "Medicinal Plants",
+  "uses": [
+    "Immunity boosting",
+    "Cold and cough relief",
+    "Blood pressure regulation",
+    "Cholesterol reduction",
+    "Heart protection",
+    "Digestive improvement",
+    "Antifungal skin applications",
+    "Garlic-honey remedy",
+    "Garlic water for digestion",
+    "Appetite stimulation"
+  ],
+  "chemicalCompounds": [
+    "Allicin",
+    "Alliin",
+    "Ajoene",
+    "Diallyl disulfide",
+    "Diallyl trisulfide",
+    "S-allyl cysteine",
+    "Sulfur compounds",
+    "Flavonoids",
+    "Selenium"
+  ],
+  "medicinalProperties": [
+    "Antibacterial",
+    "Antiviral",
+    "Antifungal",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Immunomodulatory",
+    "Cardioprotective",
+    "Antihypertensive",
+    "Lipid-lowering",
+    "Antithrombotic",
+    "Digestive stimulant"
+  ],
+  "growingConditions": "Full sunlight, loose sandy-loam soil, well-drained soil, slightly acidic to neutral pH, moderate watering, cool climate during initial growth, proper spacing between cloves.",
+  "harvestingTips": "Harvest 3–4 months after planting when leaves turn yellow or brown. Loosen soil gently and pull out bulbs. Cure bulbs by drying in shade for 7–10 days. Store in a cool, dry place for long shelf life.",
+  "image": "",
+  "thumbnail": "",
+  "path": "plants_data/garlic.html",
+  "publishedDate": "2025-11-26",
+  "author": "Yash Shinde",
+  "readTime": "5 Min"
 }
+
+
+
+
+
 
     
     ]
