@@ -65,13 +65,7 @@ A dynamic, responsive website for plant research and chemical compound analysis.
 - Safari (latest)
 - Edge (latest)
 
-## Deployment
 
-The website can be deployed to any static web hosting service:
-- Netlify
-- Vercel
-- GitHub Pages
-- Traditional web hosting
 
 ## License
 
